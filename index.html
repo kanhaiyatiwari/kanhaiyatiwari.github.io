@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kanhaiya tiwari</title>
+    <link rel="icon" type="image/x-icon" href="https://ca.slack-edge.com/T049WNRKB3P-U04AFD8ME3H-4461d8f66f89-512">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <p>kanhaiya tiwari</p>
-    <p>kanhaiya tiwari</p>
+    <!-- top -->
+    <div id="nav"></div>
+    <div id="top"> 
+        <div id="left"></div>
+        <div id="right">
+<div id="pro_pic">
+<img src="https://ca.slack-edge.com/T049WNRKB3P-U04AFD8ME3H-4461d8f66f89-512" alt="">
+</div>
+<p>Kanhaiya  g</p>
+        </div>
+    </div>
+<div class="gap"></div>
+    <div id="aboutme" class="box"></div>
+    <div class="gap"></div>
+    <div id="contact" class="box">
+        <div id="form">
+            <input type="text" name="" id="name">
+            <input type="email" name="" id="email">
+            <button id="send"> send</button>
+        </div>
+    </div>
+    <div class="gap"></div>
 </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 300) {
+	    $("#nav").css("background" , "blue");
+	  }
+
+	  else{
+		  $("#nav").css("background" , "#333");  	
+	  }
+  })
+})
+</script>
