@@ -252,13 +252,13 @@
                         </div>
                     </div>
                     <div class="contact-part-2-B">
-                        <input type="text" class="name" placeholder="Name">
-                        <input type="email" class="email" placeholder="Email">
-                        <input type="number" class="phone" placeholder="Contact No.">
-                        <input type="text" class="message" placeholder="Message">
+                        <input type="text" class="name" placeholder="Name"  id="name">
+                        <input type="email" class="email" placeholder="Email" id="email">
+                        <input type="number" class="phone" placeholder="Contact No." id="cno">
+                        <input type="text" class="message" placeholder="Message" id="massage">
                     </div>
                 </div>
-                <span class="send-message-btn">Send Message &nbsp;<i class="uil uil-message"></i></span>
+                <span onclick="sendEmail();reset();return false;"  id="submit" class="send-message-btn">Send Message &nbsp;<i class="uil uil-message"></i></span>
                 <div class="contact-part-3">
                     <a href="https://github.com/kanhaiyatiwari" target="_blank" class="contact-github-icon">
                         <i class="uil uil-github"></i>
@@ -280,8 +280,30 @@
             <div><i class="uil uil-copyright"></i> Created by <span class="footer-name">kanhaiya tiwari</span> | All rights reserved.</div>
         </section> -->
     </div>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+     
+        <script>
+            function sendEmail(){
+                let name =document.getElementById("name").value;
+                let email=document.getElementById("email").value;
+                let con=document.getElementById("cno").value;
+                let mass =document.getElementById("massage").value
+                
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "tiwarikanhaiya149@gmail.com",
+    Password : "8D55B3CDD3D2782B981843621F67CE1DE976",
+    To : 'kanhaiyatiwaritiwari490@gmail.com',
+    From : "tiwarikanhaiya149@gmail.com",
+    Subject : "Mail:-from contact form",
+    Body : "Name:-"+name+"<br/> Email:-"+email+"<br/>+contact:-"+con+"<br/>massage:-"+mass
+}).then(
+  message => alert(message)
+);
+}
+        </script>
+ 
 </body>
 
 </html>
 <script src="js/script.js"></script>
-
