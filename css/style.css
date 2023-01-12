@@ -21,7 +21,7 @@ html{
     scroll-behavior: smooth;
 }
 /* navbar-section */
-#navbar{
+/*#navbar{
     width: 100%;
     position: fixed;
     font-family: 'Ubuntu' , sans-serif;
@@ -29,7 +29,7 @@ html{
     justify-content: space-around;
     align-items: center;
     padding: 25px 0;
-    background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+    background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
 }
 #navbar.sticky{
     padding: 15px 0;
@@ -69,7 +69,7 @@ html{
 }
 
 /* navbar-resposiveness-section */
-@media all and (min-width:769px) and (max-width:1029px){
+/*@media all and (min-width:769px) and (max-width:1029px){
     #navbar .name-logo{
         color: var(--light);
         font-size: 25px;
@@ -80,17 +80,17 @@ html{
         font-size: 15px;
         font-weight: 500;
     }
-}
+} */
 #home-section{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     color: var(--light);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Ubuntu' , sans-serif;
     min-height: 500px;
-    background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+    background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
     background-attachment: fixed;
 }
 #home-section #home{
@@ -179,11 +179,12 @@ html{
 }
 #home_blob-image{
     width: 200px;
+   
 }
 /* About Section */
 #about-section{
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     font-family: 'Ubuntu' , sans-serif;
     text-align: center;
     background-color: var(--ternary);
@@ -216,7 +217,7 @@ html{
 background-color: #00acee;
 height: 25rem;
 margin-top: -20px;
-
+border-radius: 5%;
 }
 .about-image>img{
     height: 100%;
@@ -273,7 +274,7 @@ margin-top: -20px;
     font-family: 'Ubuntu' , sans-serif;
     min-height: 500px;
     background-color: rgb(17, 0, 255);
-    background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+    background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
     background-attachment: fixed;
 }
 #skill-section #skill{
@@ -412,7 +413,7 @@ margin-top: -20px;
     align-items: center;
     text-align: center;
     font-family: 'Ubuntu' , sans-serif;
-    background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+    background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
     background-attachment: fixed;
 }
 #project-section .project-text-1{
