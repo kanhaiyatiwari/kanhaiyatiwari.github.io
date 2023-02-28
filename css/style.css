@@ -701,7 +701,7 @@ height: 100vh;
 /* skill-section */
 #skill-section{
     width: 100%;
-    height: 120vh;
+    height: 170vh;
     color: var(--light);
     display: flex;
     justify-content: center;
@@ -767,7 +767,7 @@ height: 100vh;
 @media all and (min-width:769px) and (max-width:1040px){
     #skill-section{
         width: 100%;
-        height: 110vh;
+        height: 150vh;
         color: var(--light);
         display: flex;
         justify-content: center;
@@ -815,7 +815,7 @@ height: 100vh;
 @media all and (min-width:480px) and (max-width:768px){
     #skill-section{
         width: 100%;
-        height: 110vh;
+        height: 150vh;
         color: var(--light);
         display: flex;
         justify-content: center;
@@ -864,7 +864,7 @@ height: 100vh;
 @media all and (min-width:320px) and (max-width:480px){
     #skill-section{
         width: 100%;
-        height: 100vh;
+        height: 140vh;
         color: var(--light);
         display: flex;
         justify-content: center;
@@ -949,7 +949,7 @@ height: 100vh;
 }
 #education-section .education-main{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     text-align: left;
     display: flex;
     justify-content: space-around;
@@ -959,7 +959,7 @@ height: 100vh;
 }
 #education-section .education-part-1{
     width: 40%;
-    height: 250px;
+    height: 300px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: var(--primary) 0px 3px 8px;
@@ -967,7 +967,7 @@ height: 100vh;
 }
 #education-section .education-part-2{
     width: 40%;
-    height: 250px;
+    height: 300px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: var(--primary) 0px 3px 8px;
@@ -1208,7 +1208,7 @@ height: 100vh;
 /* project-section */
 #project-section{
     width: 100%;
-    height: 300vh;
+    height: 400vh;
     color: var(--light);
     display: flex;
     justify-content: center;
@@ -1217,6 +1217,11 @@ height: 100vh;
     font-family: 'Ubuntu' , sans-serif;
     background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
     background-attachment: fixed;
+}
+@media all and (min-width:600px) and (max-width:768px){
+    #project-section{
+        height: 500vh;
+    }
 }
 #project-section #project{
     width: 80%;
@@ -1556,7 +1561,7 @@ height: 100vh;
 @media all and (min-width:480px) and (max-width:600px){
     #project-section{
         width: 100%;
-        height: 400vh;
+        height: 500vh;
         color: var(--light);
         display: flex;
         justify-content: center;
@@ -1570,7 +1575,7 @@ height: 100vh;
 @media all and (min-width:318px) and (max-width:480px){
     #project-section{
         width: 100%;
-        height: 400vh;
+        height: 450vh;
         color: var(--light);
         display: flex;
         justify-content: center;
@@ -1782,7 +1787,9 @@ height: 100vh;
 #contact-section .contact-part-2 .contact-part-2-B{
     width: 40%;
 }
-#contact-section .contact-part-2 .contact-part-2-B input{
+#contact-section .contact-part-2
+ .contact-part-2-B input{
+    width: 90%;
     padding: 20px 0px 20px 10px;
     border: none;
     border-radius: 5px;
