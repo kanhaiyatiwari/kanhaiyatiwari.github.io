@@ -226,17 +226,40 @@ html{
 
 #gititem{
     background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
+height: 100vh;
+
 }
 #upgititem{
     display: flex;
     gap: 5%;
     justify-content: center;
+    
 }
 
+#gitlanimage{
+    width: 90%;
+}
+#gis{
+    width: 90%;
+}
+@media all and (min-width:769px) and (max-width:1040px){
+    #gitlanimage{
+        width: 90%;
+    }
+}
 
+@media all and (min-width:318px) and (max-width:480px){
+    #upgititem{
+        display: inline;
 
-
-
+    }
+    #gitlanimage{
+        width: 90%;
+    }
+    #gititem{
+        height: 150vh;
+    }
+}
 #home-section .profile-details{
     width: 50%;
 }
@@ -1182,16 +1205,17 @@ html{
     }
 } 
 /* project-section */
+/* project-section */
 #project-section{
     width: 100%;
-    height: 150vh;
+    height: 300vh;
     color: var(--light);
     display: flex;
     justify-content: center;
     /* align-items: center; */
     text-align: center;
     font-family: 'Ubuntu' , sans-serif;
-    background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
     background-attachment: fixed;
 }
 #project-section #project{
@@ -1306,8 +1330,6 @@ html{
 @media all and (min-width:769px) and (max-width:1040px){
     #project-section{
         width: 100%;
-
-        
         height: auto;
         color: var(--light);
         display: flex;
@@ -1315,7 +1337,7 @@ html{
         /* align-items: center; */
         text-align: center;
         font-family: 'Ubuntu' , sans-serif;
-        background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
         background-attachment: fixed;
     }
     #project-section .project-part-1{
@@ -1387,9 +1409,6 @@ html{
         height: fit-content;
     }
     @media all and (min-width:769px) and (max-width:1040px){
-        #upgititem{
-            display: block;
-        }
         #project-section .project-part-1-B-desc{
             text-align: justify;
             font-size: 11px;
@@ -1403,19 +1422,16 @@ html{
     }
 }
 @media all and (min-width:480px) and (max-width:768px){
-    #upgititem{
-        display: block;
-    }
     #project-section{
         width: 100%;
-        height: 150vh;
+        height: 450vh;
         color: var(--light);
         display: flex;
         justify-content: center;
         /* align-items: center; */
         text-align: center;
         font-family: 'Ubuntu' , sans-serif;
-        background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
         background-attachment: fixed;
     }
     #project-section .project-part-1{
@@ -1540,31 +1556,28 @@ html{
 @media all and (min-width:480px) and (max-width:600px){
     #project-section{
         width: 100%;
-        height: 150vh;
+        height: 400vh;
         color: var(--light);
         display: flex;
         justify-content: center;
         /* align-items: center; */
         text-align: center;
         font-family: 'Ubuntu' , sans-serif;
-        background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
         background-attachment: fixed;
     }
 }
-@media all and (min-width:320px) and (max-width:480px){
-  #upgititem{
-    display: block;
-  }
+@media all and (min-width:318px) and (max-width:480px){
     #project-section{
         width: 100%;
-        height: 150vh;
+        height: 400vh;
         color: var(--light);
         display: flex;
         justify-content: center;
         /* align-items: center; */
         text-align: center;
         font-family: 'Ubuntu' , sans-serif;
-        background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
         background-attachment: fixed;
     }
     #project-section .project-part-1{
@@ -1726,7 +1739,7 @@ html{
 /* contact-section */
 #contact-section{
     width: 100%;
-    height: 100vh;
+    height: 103vh;
     font-family: 'Ubuntu' , sans-serif;
     text-align: center;
     background-color: var(--ternary);
@@ -2080,6 +2093,7 @@ html{
     #contact-section{
         width: 100%;
         height: auto;
+        padding-bottom: 50px;
         font-family: 'Ubuntu' , sans-serif;
         text-align: center;
         background-color: var(--ternary);
