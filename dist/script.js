@@ -41,7 +41,7 @@ $(".navbar-toggler").click(function(){
 
 function myv(){
 	document.getElementById("navbarSupportedContent").style.display="none"
-
+	openResume();
 }
 
 // --------------add active class-on another-page move----------
