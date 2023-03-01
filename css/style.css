@@ -2248,7 +2248,22 @@ display: none;
 @media all and (min-width:1000px) and (max-width:1150px){
     #project-section {
     
-    height: 600vh;
+    height: 570vh;
+    }
+    #project-section .project-part-1 {
+  
+    height: 116vh;}
+
+    #skill-section{
+
+        height: 190vh;
+    }
+}
+
+@media all and (min-width:1100px) and (max-width:1400px){
+    #project-section {
+    
+    height: 550vh;
     }
     #project-section .project-part-1 {
   
