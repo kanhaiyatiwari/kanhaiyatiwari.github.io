@@ -2242,3 +2242,15 @@ display: none;
     color: var(--primary);
     margin-bottom: 10px;
 }
+
+
+
+@media all and (min-width:1000px) and (max-width:1150px){
+    #project-section {
+    
+    height: 600vh;
+    }
+    #project-section .project-part-1 {
+  
+    height: 116vh;}
+}
