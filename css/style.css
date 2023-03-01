@@ -1429,7 +1429,7 @@ height: 100vh;
 @media all and (min-width:480px) and (max-width:768px){
     #project-section{
         width: 100%;
-        height: 450vh;
+        height: 600vh;
         color: var(--light);
         display: flex;
         justify-content: center;
@@ -1561,7 +1561,7 @@ height: 100vh;
 @media all and (min-width:480px) and (max-width:600px){
     #project-section{
         width: 100%;
-        height: 500vh;
+        height: 600vh;
         color: var(--light);
         display: flex;
         justify-content: center;
@@ -1575,7 +1575,7 @@ height: 100vh;
 @media all and (min-width:318px) and (max-width:480px){
     #project-section{
         width: 100%;
-        height: 450vh;
+        height: 550vh;
         color: var(--light);
         display: flex;
         justify-content: center;
@@ -1744,7 +1744,7 @@ height: 100vh;
 /* contact-section */
 #contact-section{
     width: 100%;
-    height: 103vh;
+    height: 107vh;
     font-family: 'Ubuntu' , sans-serif;
     text-align: center;
     background-color: var(--ternary);
