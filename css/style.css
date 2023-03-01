@@ -1342,7 +1342,7 @@ height: 100vh;
         /* align-items: center; */
         text-align: center;
         font-family: 'Ubuntu' , sans-serif;
-        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+       background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
         background-attachment: fixed;
     }
     #project-section .project-part-1{
@@ -1363,6 +1363,9 @@ height: 100vh;
         height: 220px;
         background-color: var(--primary);
         opacity: 0.8;
+    }
+    .gits{
+        align-items: center;
     }
     #project-section .project-part-1-A-tools img{
         width: 25px;
@@ -1426,6 +1429,7 @@ height: 100vh;
         }
     }
 }
+
 @media all and (min-width:480px) and (max-width:768px){
     #project-section{
         width: 100%;
@@ -1436,7 +1440,7 @@ height: 100vh;
         /* align-items: center; */
         text-align: center;
         font-family: 'Ubuntu' , sans-serif;
-        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+       background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
         background-attachment: fixed;
     }
     #project-section .project-part-1{
@@ -1568,7 +1572,7 @@ height: 100vh;
         /* align-items: center; */
         text-align: center;
         font-family: 'Ubuntu' , sans-serif;
-        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+       background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
         background-attachment: fixed;
     }
 }
@@ -1582,7 +1586,7 @@ height: 100vh;
         /* align-items: center; */
         text-align: center;
         font-family: 'Ubuntu' , sans-serif;
-        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+       background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
         background-attachment: fixed;
     }
     #project-section .project-part-1{
@@ -2222,3 +2226,11 @@ display: none;
  
  
 
+#gits{
+    display: flex;
+    justify-content: center;
+    color: #F5F5F5;
+    height: 6vh;
+    align-items: center;
+    font-size: large;
+}
