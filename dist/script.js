@@ -39,7 +39,10 @@ $(".navbar-toggler").click(function(){
 	setTimeout(function(){ test(); });
 });
 
+function myv(){
+	document.getElementById("navbarSupportedContent").style.display="none"
 
+}
 
 // --------------add active class-on another-page move----------
 jQuery(document).ready(function($){
