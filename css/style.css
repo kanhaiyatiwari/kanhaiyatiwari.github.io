@@ -1365,6 +1365,7 @@ height: 140vh;
         opacity: 0.8;
     }
     .gits{
+
         align-items: center;
     }
     #project-section .project-part-1-A-tools img{
@@ -2233,6 +2234,7 @@ display: none;
  
 
 #gits{
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     color: #F5F5F5;

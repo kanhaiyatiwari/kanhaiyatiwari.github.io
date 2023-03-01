@@ -50,10 +50,10 @@
                     </li>
 
                     <li class="nav-item">
-                        <a   href="media/fw20_1370-Kanhaiya-Tiwari-Resume.pdf" download  onclick="openResume()" onclick="myv()">Resume</a>
+                        <a   href="media/fw20_1370-Kanhaiya-Tiwari-Resume.pdf" download  onclick="openResume()" >Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a  class="nav-link" href="#contact-section"><i class="far fa-copy" onclick="myv()"></i>contact</a>
+                        <a  onclick="myv()" class="nav-link" href="#contact-section"><i class="far fa-copy"></i>contact</a>
                     </li>
                 </ul>
             </div>
@@ -576,7 +576,10 @@
 </html>
 <Script>
     function openResume(){
+        myv();
         window.open("https://drive.google.com/file/d/1ZXSp4cUOHl-7O6BfGvQSrCg-TLsNCFXr/view?usp=sharing");
+       
+       
     }
 </Script>
 <script src="js/script.js"></script>
