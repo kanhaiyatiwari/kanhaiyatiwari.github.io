@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 :root{
-    --primary:#3dcfd3;
+    --primary:#b53dd3;
     --dark:#161616;
     --gray:rgb(85, 85, 85);
     --light:#FFFFFF;
     --ternary:#F5F5F5;
     --linkedin:#0A66C2;
-    --twitter:#00acee;
+    --twitter:#0067ee;
 }
 *{
     margin: 0;
@@ -218,10 +218,13 @@ html{
 
 #git{
     width: 70%;
-    background-color: rgb(0, 172, 238);
+    background-color:white;
     height: 45vh;
     margin-bottom: 10vh;
-    color: aliceblue;
+    /* color: white; */
+}
+.text-muted {
+color: red;
 }
 
 #gititem{
@@ -229,6 +232,7 @@ html{
 height: 140vh;
 
 }
+
 #upgititem{
     display: flex;
     gap: 5%;
