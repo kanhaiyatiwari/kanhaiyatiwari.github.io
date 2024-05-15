@@ -227,7 +227,7 @@ html{
 
 #gititem{
     background: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128__340.jpg"), no-repeat, center;
-height: 140vh;
+height: 160vh;
 
 }
 
@@ -250,7 +250,7 @@ height: 140vh;
     }
 }
 
-@media all and (min-width:318px) and (max-width:480px){
+@media all and (min-width:300px) and (max-width:480px){
     #upgititem{
         display: inline;
 
@@ -259,7 +259,7 @@ height: 140vh;
         width: 90%;
     }
     #gititem{
-        height: 180vh;
+        height: 210vh;
     }
 }
 #home-section .profile-details{
@@ -405,7 +405,7 @@ height: 140vh;
     }
  }
 
- @media all and (min-width:320px) and (max-width:480px){
+ @media all and (min-width:300px) and (max-width:480px){
     #home-section{
         width: 100%;
         height: 100vh;
@@ -634,7 +634,7 @@ height: 140vh;
         margin-right: 0px;
     }
 }
-@media all and (min-width:320px) and (max-width:480px){
+@media all and (min-width:300px) and (max-width:480px){
     #about-section{
         width: 100%;
         height: auto;
@@ -861,9 +861,10 @@ height: 140vh;
         color: var(--primary);
         line-height: 50px;
     }
+    
 }
 
-@media all and (min-width:320px) and (max-width:480px){
+@media all and (min-width:300px) and (max-width:480px){
     #skill-section{
         width: 100%;
         height: 140vh;
@@ -920,6 +921,13 @@ height: 140vh;
         font-size: 13px;
         color: var(--primary);
         line-height: 50px;
+    }
+    .backend-icons {
+        flex-wrap: wrap;
+    }
+
+    .backend-icons div {
+        flex: 1  1; /* Adjust to ensure two items per row */
     }
 }
 /* education-section */
@@ -1126,7 +1134,7 @@ height: 140vh;
         transition: 0.3s;
     }
 }
-@media all and (min-width:320px) and (max-width:480px){
+@media all and (min-width:300px) and (max-width:480px){
     #education-section{
         width: 100%;
         height: 100vh;
@@ -1580,7 +1588,7 @@ height: 140vh;
         background-attachment: fixed;
     }
 }
-@media all and (min-width:318px) and (max-width:480px){
+@media all and (min-width:300px) and (max-width:480px){
     #project-section{
         width: 100%;
         height: 485vh;
@@ -2104,7 +2112,7 @@ height: 140vh;
         margin-left: 48%;
     }
 }
-@media all and (min-width:320px) and (max-width:480px){
+@media all and (min-width:300px) and (max-width:480px){
     #contact-part-2{
         display: flex;
 
@@ -2209,7 +2217,7 @@ display: none;
         font-size: 17px;
     }
 }
-@media all and (min-width:320px) and (max-width:480px){
+@media all and (min-width:300px) and (max-width:480px){
     #footer-section{
         width: 100%;
         height: 35px;
