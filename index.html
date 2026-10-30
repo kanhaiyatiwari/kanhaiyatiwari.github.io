@@ -5,667 +5,418 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
-    <title>Kanhaiya's Portfolio</title>
+    <meta name="description" content="Kanhaiya Lal Tiwari - Java Backend Engineer (Spring Boot, MySQL, REST APIs, third-party integrations)" />
+    <title>Kanhaiya Tiwari | Java Backend Engineer</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style3.css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <link rel="stylesheet" href="dist/style2.css">
-
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@2.3.4/dist/github-calendar-responsive.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
 </head>
 
 <body>
-    
-       
-        <nav class="navbar navbar-expand-custom navbar-mainbg">
-            <a class="navbar-brand navbar-logo" href="#">Kanhaiya tiwari </a>
-            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars text-white"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
-                    <li class="nav-item">
-                        <a onclick="myv()" class="nav-link" href="#home-section">
-                            <i class="far fa-clone"></i>
-                            <i class="fas fa-tachometer-alt"></i>Home</a>
 
-                    </li>
-                    <li class="nav-item">
-                        <a onclick="myv()" class="nav-link" href="#gi">
-                            <i class="far fa-clone"></i>
-                            <i class="fas fa-tachometer-alt"></i>Github</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a onclick="myv()" class="nav-link" href="#about-section">
-                            
-                            <i class="far fa-address-book"></i>About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a onclick="myv()" class="nav-link" href="#education-section"><i class="far fa-clone"></i>Education</a>
-                    </li>
-                    <!-- /////////// -->
-                    <li class="nav-item">
-                        <a onclick="myv()" class="nav-link" href="#exeperience-section"><i class="far fa-clone"></i>Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a onclick="myv()" class="nav-link" href="#skill-section">
-                            <i class="far fa-clone"></i>
-                            <i class="far fa-calendar-alt"></i>Skill</a>
-                    </li>
-                    <li class="nav-item">
-                        <a onclick="myv()" class="nav-link" href="#project-section">
-                            <i class="far fa-clone"></i>
-                            <i class="far fa-chart-bar"></i>Project</a>
-                    </li>
+    <nav class="navbar navbar-expand-custom navbar-mainbg">
+        <a class="navbar-brand navbar-logo" href="#home-section">Kanhaiya Tiwari</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item active">
+                    <a onclick="myv()" class="nav-link" href="#home-section"><i class="uil uil-estate"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="myv()" class="nav-link" href="#about-section"><i class="uil uil-user"></i>About</a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="myv()" class="nav-link" href="#skill-section"><i class="uil uil-brackets-curly"></i>Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="myv()" class="nav-link" href="#project-section"><i class="uil uil-folder"></i>Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="myv()" class="nav-link" href="#contact-section"><i class="uil uil-envelope"></i>Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="resume-link-1" href="media/Kanhaiya_Tiwari_Resume.pdf"
+                        download="Kanhaiya_Tiwari_Resume.pdf" onclick="openResume(this); myv();"><i class="uil uil-file-download"></i>Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-                    <li class="nav-item">
-                        
-                        <a   href="media/fw20_1370-Kanhaiya-Tiwari-Resume.pdf"
-                         download  onclick="openResume()" >
-                         <i class="far fa-clone"></i>
-                        Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a  onclick="myv()" class="nav-link" href="#contact-section"><i class="far fa-copy"></i>Contact</a>
-                    </li>
-                </ul>
+    <!-- Home -->
+    <section id="home-section" class="home-section">
+        <div id="home">
+            <div class="profile-details">
+                <div class="text-1">Hey, I'm <span class="text-1-name">Kanhaiya!</span></div>
+                <div class="text-2">Java Backend Engineer</div>
+                <div class="text-3">I build Spring Boot APIs, integrations and production systems that real customers use every day.</div>
+                <a class="appointment-btn" id="resume-button-1" href="media/Kanhaiya_Tiwari_Resume.pdf"
+                    download="Kanhaiya_Tiwari_Resume.pdf" onclick="openResume(this)">Resume&nbsp; <i class="uil uil-file-download"></i></a>
             </div>
-        </nav>
-        
-        
-        
-        
-        <!-- Coppyde -->
-        
-        <section id="home-section" class="home-section">
-            <div id="home">
-                <!-- <div class="home-social-media1">
-                    <a href="https://github.com/kanhaiyatiwari" target="_blank" class="home-github-icon">
-                        <i class="uil uil-github"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/kanhaiya-tiwari-684942257/" target="_blank"
-                        class="home-linkedin-icon">
-                        <i class="uil uil-linkedin"></i>
-                    </a>
-
-                    <a href="https://twitter.com/kanhaiy64618991" target="_blank" class="home-twitter-icon">
-                        <i class="uil uil-twitter"></i>
-                    </a>
-                </div> -->
-                <div class="profile-details">
-                    <div class="text-1">
-                        Hey, I'm <span class="text-1-name">Kanhaiya!</span>
-                       
-                    </div>
-                    <div class="text-2">Java Back End Developer</div>
-                    <div class="text-3">As an experienced Java Back End Developer, I possess a robust problem-solving mindset and excel in team management. My adaptability allows me to seamlessly integrate into diverse and ethical work cultures, ensuring effective collaboration and high-quality results.</div>
-                    <a href="media/fw20_1370-Kanhaiya-Tiwari-Resume.pdf" download  onclick="openResume()" class="appointment-btn">Download  Resume&nbsp; <i class="uil uil-message"></i></a>
-                   
-                </div>
-                <div class="kanhaiya-image">
-                    <svg id="home_blob" viewBox="0 -20 230 215" xmlns="">
-                        <mask id="mask0" mask-type="alpha">
-                            <path
-                                d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path
-                                d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                            <image id="home_blob-image" xlink:href="media\propicwb1.png" />
-                        </g>
-                    </svg>
-                </div>
+            <div class="kanhaiya-image">
+                <svg id="home_blob" viewBox="0 -20 230 215" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                        <image id="home_blob-image" xlink:href="media/propicwb1.png" />
+                    </g>
+                </svg>
             </div>
-        </section>
-        <section id="about-section" class="about-section">
-            <div id="about">
-                <div class="about-part-1">
-                    <div class="about-text-1">About Me</div>
-                    <div class="about-text-2">---Introduction---</div>
-                </div>
-                <div class="about-part-2">
-                    <!-- <div class="about-image">
-                        <img src="media\propicwb1.png" alt="image">
-                        
-                    </div> -->
-                    <div class="about-intro">
-                        <div class="about-intro-text-1">
-                            Dynamic and results-oriented Java Developer with six months 
-                            of professional experience, complemented by a robust
-                             foundation in java,jdbc ,mysql
-                             Hibernate, JPA, RDBMS, LLD, and Spring Boot.
-                              Demonstrated proficiency in deploying applications 
-                              on AWS, ensuring optimal performance and scalability. 
-                              Equipped with over 3000 hours of hands-on coding experience 
-                              at Masai School, mastering the intricacies of software development.
-                               Skilled in front-end technologies including HTML, CSS, and JavaScript
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about-section" class="about-section">
+        <div class="wrap">
+            <div class="about-part-1">
+                <div class="about-text-1">About Me</div>
+                <div class="about-text-2">Experience and career</div>
+            </div>
+
+            <p class="about-summary">
+                I'm a Java backend engineer with about 3 years of experience building REST APIs, async jobs and
+                third-party integrations with Spring Boot and MySQL. At Sunbase, a cloud CRM/ERP for solar installers,
+                I owned modules from requirements to production and shipped them in 1–2 months where similar modules
+                usually took 6–8. I was promoted within 16 months and kept the platform running as the last engineer
+                of a 30-person team.
+            </p>
+
+            <div class="stats">
+                <div><span>3 yrs</span>professional experience</div>
+                <div><span>2–4k</span>calls a day through my Twilio module</div>
+                <div><span>~500</span>customer accounts using modules I built</div>
+                <div><span>~20</span>production issues fixed every week</div>
+            </div>
+
+            <h3 class="sub-head">Experience</h3>
+            <div class="timeline">
+                <div class="xp">
+                    <div class="xp-head">
+                        <div>
+                            <div class="xp-company">Sunbase <span>· cloud CRM/ERP for solar installers · Remote</span></div>
+                            <div class="xp-role">Software Engineer <span>12/2025 – 10/2026</span></div>
+                            <div class="xp-role">Java Backend Developer <span>08/2024 – 12/2025</span></div>
                         </div>
-                        <div class="about-intro-text-2">
-                            <div class="box-1"><span class="text-1">24+</span><br> Months coding exeperience</div>
-                            <div class="box-2"><span class="text-2">350+</span><br> Github commits</div>
-                            <div class="box-3"><span class="text-3">400+</span><br> Leetcode & Hackerrank problem solved</div>
-                        </div>
-                        <!-- <a href="https://drive.google.com/file/d/1ZXSp4cUOHl-7O6BfGvQSrCg-TLsNCFXr/view?usp=sharing" target="_blank" class="resume-btn">Resume11 &nbsp;<i class="uil uil-file-download"></i></a> -->
+                        <div class="badge-promo">Promoted</div>
                     </div>
+                    <ul>
+                        <li>Owned backend features end to end: requirement analysis with business teams, API and MySQL schema design, implementation, release and production support.</li>
+                        <li>Secured Spring Boot APIs with Spring Security and JWT and role-based access; added global exception handling, request validation, Swagger docs, SLF4J logging and JUnit 5 + Mockito tests.</li>
+                        <li>Fixed about 20 production bugs and issues a week on the Java/Tomcat platform, and stayed on as the last engineer after the 30-person team was reduced.</li>
+                        <li>Designed a schema-per-client (multi-tenant) MySQL model for the Learn module and built a Knowledge Base with an AI assistant on Llama via Ollama, used by 3,000–6,000 users.</li>
+                    </ul>
+                </div>
+                <div class="xp">
+                    <div class="xp-head">
+                        <div>
+                            <div class="xp-company">Masai School</div>
+                            <div class="xp-role">SDE Intern <span>11/2023 – 06/2024</span></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Built backend APIs in Spring Boot and Python that connected the frontend to external and third-party services.</li>
+                        <li>Turned project requirements from the product and frontend teams into backend features.</li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        
-        <section id="skill-section">
-            <div id="skill">
-                <div class="skill-text-1">Tech Stacks & Tools</div>
-                <div class="skill-part-1">
-                    <div class="frontend-text">Front End</div>
-                    <div class="frontend-icons">
-                        <div>
-                            <img src="Media2/html.png" alt="html">
-                            <div>HTML</div>
-                        </div>
-                        <div>
-                            <img src="Media2/css.png" alt="css">
-                            <div>CSS</div>
-                        </div>
-                        <div>
-                            <img src="Media2/js.png" alt="js">
-                            <div>JavaScript</div>
-                        </div>
-                       
-                        <div>
-                            <img src="Media2/heroko.png" alt="herokoo">
-                            <div>herokoo</div>
-                        </div>
-                    </div>
-                    <div class="backend-text">Back End</div>
-                    <div class="backend-icons">
-                        <div>
-                            <img src="Media2/java.png" alt="java">
-                            <div>Java</div>
-                        </div>
-                        <div>
-                            <img src="Media2/sql.png" alt="sql">
-                            <div>SQL</div>
-                        </div>
-                        <div>
-                            <img src="Media2/hibernate1.png" alt="hibernate">
-                            <div>Hibernate</div>
-                        </div>
-                        <div>
-                            <img src="https://banner2.cleanpng.com/20240131/krs/transparent-python-logo-black-and-white-photograph-of-a-smiling-1710891784947.webp" alt="css">
-                            <div>Python</div>
-                        </div>
-                        <div>
-                            <img src="https://banner2.cleanpng.com/20180809/hvf/kisspng-flask-by-example-web-framework-python-bottle-sebastian-estenssoro-5b6c0aa33b3b57.9170119715338072672426.jpg" alt="herokoo">
-                            <div>flask</div>
-                        </div>
-                        <div>
-                            <img src="Media2/aws.png" alt="">
-                            <div>AWS</div>
-                        </div>
-                        <div>
-                            <img src="Media2/api1.png" alt="api">
-                            <div>Rest API</div>
-                        </div>
 
-                    </div>
-
-                    <div class="frontend-text">Tools</div>
-                    <div class="frontend-icons">
-                        <div>
-                            <img src="Media2/github.png" alt="css">
-                            <div>Git</div>
-                        </div>
-                        <div>
-                            <img src="Media2/Spring.png" alt="css">
-                            <div>Spring-Boot</div>
-                        </div>
-                        <div>
-                            <img src="Media2/mysql.png" alt="js">
-                            <div>MySql</div>
-                        </div>
-                    </div>
+            <h3 class="sub-head">What I built at Sunbase</h3>
+            <p class="note">Company work. The code is private, so these are descriptions only.</p>
+            <div class="highlights">
+                <div class="hl">
+                    <h4>Twilio Telephony &amp; Campaigns</h4>
+                    <p>Built solo, backend and frontend, for 20 customer accounts making 2,000–4,000 calls a day: IVR with routing, recording and voicemail, browser softphone, power and predictive dialers, and SMS campaigns sending 10,000–20,000 SMS a day with @Async batching.</p>
+                    <div class="tags"><span>Spring Boot</span><span>Spring Data JPA</span><span>MySQL</span><span>Twilio</span></div>
                 </div>
-                <div class="skill-part-2"></div>
-            </div>
-        </section>
-
-
-        <section id="education-section">
-            <div id="education">
-                <div class="education-header">
-                    <div class="education-text-1">Education</div>
-                    <div class="education-text-2">---Qualification---</div>
+                <div class="hl">
+                    <h4>Marketing Hub &amp; Social Media</h4>
+                    <p>One dashboard for GA4, Search Console, DataForSEO, Meta Ads and Google Ads through scheduled sync jobs and live API calls with Spring Cache, plus post scheduling and AI auto-replies for WhatsApp, Facebook, Instagram and LinkedIn.</p>
+                    <div class="tags"><span>Spring Boot</span><span>Spring Cache</span><span>Meta &amp; Google APIs</span></div>
                 </div>
-                <div class="education-main">
-                    <div class="education-part-1">
-                        <div>
-                            <div class="text-1">Full Stack Web Development</div>
-                            <div class="text-2">MASAI SCHOOL</div>
-                            <div class="text-3">May, 2022 - Jan, 2023</div>
-                            <br>
-                            <div class="text-4">Completed a Java Back End Development course and accquired strong knowledge in Hibernate, JPA, RDBMS, LLD, Spring Boot, Deployment on AWS, etc. and 1200+ hours coding exeperience at Masai School.</div>
-                        </div>
-                    </div>
-                    <div class="education-part-2">
-                        <div>
-                            <div class="text-1">B.com + Computer Application</div>
-                            <div class="text-2">M.C.B.U(Chhatarpur)</div>
-                            <div class="text-3">June, 2018 - 2021</div>
-                            <br>
-                            <div class="text-4">Completed graduation from B.com With 82 percent </div>
-                        </div>
-                    </div>
+                <div class="hl">
+                    <h4>AI Voice Agents</h4>
+                    <p>Agents that call qualified leads and answer inbound calls on the company number, talk to the customer and book appointments into the CRM. Piloted with 2 customer accounts.</p>
+                    <div class="tags"><span>Spring Boot</span><span>Vapi</span></div>
+                </div>
+                <div class="hl">
+                    <h4>Click-Tracking Engine</h4>
+                    <p>A JS tracker on JSP pages sends page, session and click events to a Spring Boot API, stored in MySQL by visitor, session and page for internal product analytics.</p>
+                    <div class="tags"><span>Spring Boot</span><span>MySQL</span><span>JavaScript</span></div>
+                </div>
+                <div class="hl">
+                    <h4>Learn Module &amp; Knowledge Base</h4>
+                    <p>Multi-tenant course platform for client teams and Sunbase master courses, plus a Knowledge Base with an AI assistant answering user questions.</p>
+                    <div class="tags"><span>Servlets/JSP</span><span>MySQL</span><span>Llama / Ollama</span></div>
+                </div>
+                <div class="hl">
+                    <h4>PBLib Simulation Engine</h4>
+                    <p>A Python library and a solar energy production simulation engine on top of it, similar in purpose to PVWatts and Aurora.</p>
+                    <div class="tags"><span>Python</span></div>
                 </div>
             </div>
-        </section>
 
-        <div id="exeperience-section" ></div>
-        <section id="education-section"  class="exeperience">
-            
-            <div id="education">
-                <div class="education-header">
-                    <div class="education-text-1">Experience</div>
-                    <div></div>
-                    <div class="education-text-2"></div>
+            <h3 class="sub-head">Education</h3>
+            <div class="edu">
+                <div class="edu-card">
+                    <div class="edu-title">Full Stack Web Development</div>
+                    <div class="edu-org">Masai School, Bengaluru</div>
+                    <div class="edu-date">05/2022 – 05/2023</div>
                 </div>
-                <div class="education-main">
-                    <div class="education-part-1">
-                        <div>
-                            <div class="text-1">SDE-INTERN</div>
-                            <div class="text-2">Masai School</div>
-                            <div class="text-3">Nov,2023 - May, 2024</div>
-                            <br>
-                            <div class="text-4">I worked for 6 months as a Sde-intern  in masai school, in which I worked on many projects and different tech stacks.</div>
-                        </div>
-                    </div>
-                    
+                <div class="edu-card">
+                    <div class="edu-title">B.Com with Computer Applications</div>
+                    <div class="edu-org">M.C.B.U., Chhatarpur, Madhya Pradesh</div>
+                    <div class="edu-date">07/2018 – 07/2021 · 82%</div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
+    <!-- Skills -->
+    <section id="skill-section">
+        <div class="wrap">
+            <div class="skill-text-1">Skills</div>
 
+            <div class="icon-row">
+                <div><img src="Media2/java.png" alt="Java"><div>Java</div></div>
+                <div><img src="Media2/Spring.png" alt="Spring Boot"><div>Spring Boot</div></div>
+                <div><img src="Media2/hibernate1.png" alt="Hibernate"><div>Hibernate</div></div>
+                <div><img src="Media2/mysql.png" alt="MySQL"><div>MySQL</div></div>
+                <div><img src="Media2/api1.png" alt="REST API"><div>REST APIs</div></div>
+                <div><img src="Media2/github.png" alt="Git"><div>Git</div></div>
+            </div>
 
-        
-        <section id="project-section">
-            <div id="project">
-                <div class="project-text-1">Projects</div>
-                <div class="project-text-2">Here's a few projects, I have worked recently</div>
+            <div class="skill-groups">
+                <div class="skill-group">
+                    <h4>Languages &amp; Core</h4>
+                    <div class="chips"><span>Java</span><span>Python</span><span>SQL</span><span>JavaScript</span><span>OOP</span><span>Multithreading</span><span>Data Structures</span></div>
+                </div>
+                <div class="skill-group">
+                    <h4>Backend</h4>
+                    <div class="chips"><span>Spring Boot</span><span>Spring MVC</span><span>Spring Security</span><span>Spring Data JPA</span><span>Hibernate</span><span>JDBC</span><span>REST APIs</span><span>Microservices</span><span>Servlets</span><span>JSP</span></div>
+                </div>
+                <div class="skill-group">
+                    <h4>Security &amp; Design</h4>
+                    <div class="chips"><span>JWT</span><span>OAuth 2.0</span><span>RBAC</span><span>SOLID</span><span>Design Patterns</span><span>HLD / LLD</span></div>
+                </div>
+                <div class="skill-group">
+                    <h4>Database &amp; Caching</h4>
+                    <div class="chips"><span>MySQL</span><span>Indexing</span><span>Multi-tenant Schema Design</span><span>Spring Cache</span></div>
+                </div>
+                <div class="skill-group">
+                    <h4>Integrations &amp; AI</h4>
+                    <div class="chips"><span>Twilio</span><span>Vapi</span><span>WhatsApp</span><span>Meta &amp; Google Ads APIs</span><span>GA4</span><span>DataForSEO</span><span>Llama / Ollama</span></div>
+                </div>
+                <div class="skill-group">
+                    <h4>Testing &amp; Tools</h4>
+                    <div class="chips"><span>JUnit 5</span><span>Mockito</span><span>Git</span><span>GitHub</span><span>Postman</span><span>Swagger</span><span>SLF4J</span><span>Tomcat</span><span>IntelliJ IDEA</span></div>
+                </div>
+                <div class="skill-group">
+                    <h4>Frontend</h4>
+                    <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                </div>
+                <div class="skill-group soft">
+                    <h4>Soft Skills</h4>
+                    <div class="chips"><span>Problem-solving</span><span>Communication</span><span>Time Management</span><span>Adaptability</span><span>Ownership</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects -->
+    <section id="project-section">
+        <div id="project">
+            <div class="project-text-1">Projects</div>
+            <div class="project-text-2">Projects with public code and demos</div>
 
-
-
-
-
-                <div class="project-part-1">
-                    <div class="project-part-1-header">Nicco-park</div>
-                    <div class="project-part-1-A">
-                        <div class="project-part-1-A-img">
-                            <img src="media/asum_park.png" alt="gusto">
-                        </div>
-                        <div class="project-part-1-A-tools">
-                            <img src="media\icons8-java-250.png" alt="">
-                            <img src="media\icons8-hibernate-100.png" alt="">
-                            <img src="media\icons8-sql-100.png" alt="">
-                            <img src="media\icons8-rest-api-100.png" alt="">
-                        </div>
-                        <div class="project-part-1-A-tools-text">Tech Stacks</div>
-                    </div>
-                    <div class="project-part-1-B">
-                        <div class="project-part-1-B-header">Niccopark</div>
-                        <div class="project-part-1-B-desc">
-                            <div><i class="uil uil-navigator"></i>
-                                Nicco-park is a Rest API application.
-                            </div>
-                            <br>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                This project is developed by a team of 5 members with the help of the Spring-Boot framework. The main objective of this Web services application is to cater needs of front-end developers to call different types of API as per the requirement.
-                            </div>
-                            <br>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                Customer can sign and sign on this website and explore most of things which is available on
-                                in the nicoo park like they can book activity, and tickeds
-                            </div>
-                            <br>
-                           
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                Tech Stacks:-Core-java,Spring-Boot,lombook,hibernate,MySql,jpql
-                            </div>
-                        </div>
-                        <div class="project-part-1-B-btn">
-                            <a href="https://drive.google.com/file/d/1M_MO7uC3gaH2bgrjPWcy-fzk0NPRCKLf/view" target="_blank">Presentation &nbsp; <i class="uil uil-external-link-alt"></i></a>
-                            <a href="https://github.com/SubhadeepBid/agreeable-development-7620.git" target="_blank"><i class="uil uil-github"></i> View Code</a>
-                            <span></span>
-                        </div>
+            <div class="project-part-1">
+                <div class="project-part-1-A">
+                    <div class="project-part-1-A-img"><img src="media/asum_park.png" alt="Nicco Park booking API"></div>
+                    <div class="project-part-1-A-tools">
+                        <img src="media/icons8-java-250.png" alt="Java">
+                        <img src="media/icons8-hibernate-100.png" alt="Hibernate">
+                        <img src="media/icons8-sql-100.png" alt="MySQL">
+                        <img src="media/icons8-rest-api-100.png" alt="REST API">
                     </div>
                 </div>
-
-
-
-
-
-
-
-                <div class="project-part-1">
-                    <div class="project-part-1-header">Course-monitering-System</div>
-                    <div class="project-part-1-A">
-                        <div class="project-part-1-A-img">
-                            <img src="media/corse.png" alt="gusto">
-                        </div>
-                        <div class="project-part-1-A-tools">
-                            <img src="media\icons8-java-250.png" alt="">
-                            <img src="media\icons8-hibernate-100.png" alt="">
-                            <img src="media\icons8-sql-100.png" alt="">
-                        </div>
-                        <div class="project-part-1-A-tools-text">Tech Stacks</div>
-                    </div>
-                    <div class="project-part-1-B">
-                        <div class="project-part-1-B-header">Course-monitering-System</div>
-                        <div class="project-part-1-B-desc">
-                            <div><i class="uil uil-navigator"></i>
-                                Course-monitering-System is a Rest API for a monitering Course application to manage the deal between a Adminstrator and batch and course
-                            </div>
-                            <br>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                This was the Individual project. So, I individually worked on this project and cloned
-                                it.
-                            </div>
-                            <br>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                Admin can create a Couse ,batch ,couse plan and also can see the list of Couse. 
-                            </div>
-                            <br>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                I have done all the implementation with proper authentication and validation which makes this Rest API most comfortable to use.
-                            </div>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                Tech Stacks:-Core java,jdbc,hibernate,MySql
-                            </div>
-                        </div>
-                        <div class="project-part-1-B-btn">
-                            <a href="https://drive.google.com/file/d/1ZF4kyBSPT5hKE6x21arHrypFql6X3qna/view?usp=sharing" target="_blank">Prasentation &nbsp; <i class="uil uil-external-link-alt"></i></a>
-                            <a href="https://github.com/kanhaiyatiwari/-diligent-quiet-9486" target="_blank"><i class="uil uil-github"></i> View Code</a>
-                            <span></span>
-                        </div>
+                <div class="project-part-1-B">
+                    <div class="project-part-1-B-header">Nicco Park – Booking API</div>
+                    <ul class="project-points">
+                        <li>REST API for an amusement park where customers sign up, book activities and buy tickets.</li>
+                        <li>Built with Spring Boot by a team of 5; designed and implemented the registration, booking and ticket purchase APIs.</li>
+                        <li>Tech stack: Java, Spring Boot, Hibernate, JPQL, Lombok, MySQL.</li>
+                    </ul>
+                    <div class="project-part-1-B-btn">
+                        <a href="https://drive.google.com/file/d/1M_MO7uC3gaH2bgrjPWcy-fzk0NPRCKLf/view" target="_blank" rel="noopener">Demo &amp; Presentation &nbsp;<i class="uil uil-external-link-alt"></i></a>
+                        <a href="https://github.com/SubhadeepBid/agreeable-development-7620" target="_blank" rel="noopener"><i class="uil uil-github"></i> View Code</a>
                     </div>
                 </div>
+            </div>
 
-
-                <div class="project-part-1">
-                    <div class="project-part-1-header">Gusto Clone</div>
-                    <div class="project-part-1-A">
-                        <div class="project-part-1-A-img">
-                            <img src="media\gusto_picture.png" alt="gusto">
-                        </div>
-                        <div class="project-part-1-A-tools">
-                            <img src="media\icons8-html-5-250.png" alt="">
-                            <img src="media\icons8-css3-300.png" alt="">
-                            <img src="media\icons8-javascript-250.png" alt="">
-                        </div>
-                        <div class="project-part-1-A-tools-text">Tech Stacks</div>
-                    </div>
-                    <div class="project-part-1-B">
-                        <div class="project-part-1-B-header">Gusto Clone</div>
-                        <div class="project-part-1-B-desc">
-                            <div><i class="uil uil-navigator"></i>
-                                Gusto is a company that provides a cloud-based payroll, benefits, and
-                                human resource management software for businesses based in the United
-                                States.
-                            </div>
-                            <br>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                This was the group project. So, a team of 05 members worked on this project and cloned
-                                it.
-                            </div>
-                            <br>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                User can sign and sign on this website and explore most of things which is available on
-                                original website.
-                            </div>
-                            <br>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                Specially, I worked on the   Landingpage and cloned almost 100% same as
-                                original website.
-                            </div>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                Tech Stacks:-js,html,css,LocalStorage-for backend
-                            </div>
-                        </div>
-                        <div class="project-part-1-B-btn">
-                            <a href="https://verdant-panda-50245c.netlify.app/index.html" target="_blank">Explore &nbsp; <i class="uil uil-external-link-alt"></i></a>
-                            <a href="https://github.com/iamamitkumarsaini/perpetual-paper-4225" target="_blank"><i class="uil uil-github"></i> View Code</a>
-                            <span></span>
-                        </div>
+            <div class="project-part-1">
+                <div class="project-part-1-A">
+                    <div class="project-part-1-A-img"><img src="media/corse.png" alt="Course Monitoring System"></div>
+                    <div class="project-part-1-A-tools">
+                        <img src="media/icons8-java-250.png" alt="Java">
+                        <img src="media/icons8-sql-100.png" alt="MySQL">
                     </div>
                 </div>
-
-
-                <div class="project-part-1">
-                    <div class="project-part-1-header">Toggle Clone</div>
-                    <div class="project-part-1-A">
-                        <div class="project-part-1-A-img">
-                            <img src="Media2/togle.jpg" alt="gusto">
-                        </div>
-                        <div class="project-part-1-A-tools">
-                            <img src="media\icons8-html-5-250.png" alt="">
-                            <img src="media\icons8-css3-300.png" alt="">
-                            <img src="media\icons8-javascript-250.png" alt="">
-                        </div>
-                        <div class="project-part-1-A-tools-text">Tech Stacks</div>
-                    </div>
-                    <div class="project-part-1-B">
-                        <div class="project-part-1-B-header">Toggle Clone</div>
-                        <div class="project-part-1-B-desc">
-                            <div><i class="uil uil-navigator"></i>
-                             Toggle is tracking software to boost performance and get paid for every billable minute. An intuitive tool that makes time tracking painless for the entire team.
-                            </div>
-                            <br>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                This was the group project. So, a team of 05 members worked on this project and cloned
-                                it.
-                            </div>
-                            <br>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                User can sign and sign on this website and explore most of things which is available on
-                                original website.
-                            </div>
-                            <br>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                Specially, I worked on the sign-up and sign-in Landing-page and cloned almost 100% same as
-                                original website.
-                            </div>
-                            <div>
-                                <i class="uil uil-navigator"></i>
-                                Tech Stacks:-js,html,css,herokuapp
-                            </div>
-                        </div>
-                        <div class="project-part-1-B-btn">
-                            <a href="https://toggltrackclone.netlify.app/" target="_blank">Explore &nbsp; <i class="uil uil-external-link-alt"></i></a>
-                            <a href="https://github.com/kanhaiyatiwari/Toggle-track.git" target="_blank"><i class="uil uil-github"></i> View Code</a>
-                            <span></span>
-                        </div>
+                <div class="project-part-1-B">
+                    <div class="project-part-1-B-header">Course Monitoring System</div>
+                    <ul class="project-points">
+                        <li>Solo project for administrators to create and manage courses, batches and course plans and track their progress.</li>
+                        <li>Implemented authentication and input validation; delivered in 5 days.</li>
+                        <li>Tech stack: Java, JDBC, MySQL.</li>
+                    </ul>
+                    <div class="project-part-1-B-btn">
+                        <a href="https://drive.google.com/file/d/1ZF4kyBSPT5hKE6x21arHrypFql6X3qna/view?usp=sharing" target="_blank" rel="noopener">Demo &amp; Presentation &nbsp;<i class="uil uil-external-link-alt"></i></a>
+                        <a href="https://github.com/kanhaiyatiwari/-diligent-quiet-9486" target="_blank" rel="noopener"><i class="uil uil-github"></i> View Code</a>
                     </div>
                 </div>
+            </div>
 
+            <div class="project-part-1">
+                <div class="project-part-1-A">
+                    <div class="project-part-1-A-img"><img src="media/gusto_picture.png" alt="Payroll and HR website"></div>
+                    <div class="project-part-1-A-tools">
+                        <img src="media/icons8-html-5-250.png" alt="HTML">
+                        <img src="media/icons8-css3-300.png" alt="CSS">
+                        <img src="media/icons8-javascript-250.png" alt="JavaScript">
+                    </div>
+                </div>
+                <div class="project-part-1-B">
+                    <div class="project-part-1-B-header">Payroll &amp; HR Website (inspired by Gusto)</div>
+                    <ul class="project-points">
+                        <li>Website for payroll, benefits and HR software, built by a team of 5.</li>
+                        <li>Built the landing page; users can sign up, sign in and browse the product pages.</li>
+                        <li>Tech stack: HTML, CSS, JavaScript, localStorage.</li>
+                    </ul>
+                    <div class="project-part-1-B-btn">
+                        <a href="https://verdant-panda-50245c.netlify.app/index.html" target="_blank" rel="noopener">Live Demo &nbsp;<i class="uil uil-external-link-alt"></i></a>
+                        <a href="https://github.com/iamamitkumarsaini/perpetual-paper-4225" target="_blank" rel="noopener"><i class="uil uil-github"></i> View Code</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="project-part-1">
+                <div class="project-part-1-A">
+                    <div class="project-part-1-A-img"><img src="Media2/togle.jpg" alt="Time tracking website"></div>
+                    <div class="project-part-1-A-tools">
+                        <img src="media/icons8-html-5-250.png" alt="HTML">
+                        <img src="media/icons8-css3-300.png" alt="CSS">
+                        <img src="media/icons8-javascript-250.png" alt="JavaScript">
+                    </div>
+                </div>
+                <div class="project-part-1-B">
+                    <div class="project-part-1-B-header">Time-Tracking Website (inspired by Toggl Track)</div>
+                    <ul class="project-points">
+                        <li>Time-tracking website for teams to log billable hours, built by a team of 5.</li>
+                        <li>Built the sign-up and sign-in pages.</li>
+                        <li>Tech stack: HTML, CSS, JavaScript.</li>
+                    </ul>
+                    <div class="project-part-1-B-btn">
+                        <a href="https://toggltrackclone.netlify.app/" target="_blank" rel="noopener">Live Demo &nbsp;<i class="uil uil-external-link-alt"></i></a>
+                        <a href="https://github.com/kanhaiyatiwari/Toggle-track" target="_blank" rel="noopener"><i class="uil uil-github"></i> View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-
-                      
-        </section>
-
-      
-        <!-- <section id="footer-section">
-            <div><i class="uil uil-copyright"></i> Created by <span class="footer-name">kanhaiya tiwari</span> | All rights reserved.</div>
-        </section> -->
-    </div>
-    <!-- github -->
-<div id="gi"></div>
+    <!-- GitHub stats -->
     <div id="gititem">
-        <div id="gits">Github-Status</div>
+        <div id="gits">GitHub Stats</div>
         <div id="upgititem">
-           
             <div class="timeline-item">
-                <div class="timeline-item-inner outer-shadow">
-                  <i class="fa-brands fa-github icon"></i>
-                  <p class="gitStatus"><img align="center" id="gitlanimage"
-                      src="https://github-readme-stats.vercel.app/api/top-langs?username=awresh&show_icons=true&locale=en&layout=compact"
-                      alt="awresh" /></p>
-                </div>
-              </div>
-        
-    
-      <div class="timeline-item">
-        <div class="timeline-item-inner outer-shadow">
-          <i class="fa-brands fa-github icon"></i>
-          <p class="gitStatus"><img align="center" id="gis"
-              src="https://github-readme-streak-stats.herokuapp.com/?user=kanhaiyatiwari&" alt="kanhaiyatiwari" /></p>
+                <p class="gitStatus"><img id="gitlanimage" loading="lazy"
+                        src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kanhaiyatiwari&theme=default"
+                        alt="Top languages of kanhaiyatiwari" onerror="this.closest('.timeline-item').style.display='none'" /></p>
+            </div>
+            <div class="timeline-item">
+                <p class="gitStatus"><img id="gis" loading="lazy"
+                        src="https://streak-stats.demolab.com/?user=kanhaiyatiwari" alt="GitHub streak of kanhaiyatiwari"
+                        onerror="this.closest('.timeline-item').style.display='none'" /></p>
+            </div>
         </div>
-      </div>
-
+        <div class="calendar" id="git">Loading GitHub contributions…</div>
     </div>
 
-
-
-    <div class="calendar" id="git">
-
-        
-        <!-- Loading stuff -->
-        Loading the data just for you.
-      </div>
-    </div>
-<!-- github -->
-   <script src="https://smtpjs.com/v3/smtp.js"></script>
-     
-        <script>
-            function sendEmail(){
-                let name =document.getElementById("name").value;
-                let email=document.getElementById("email").value;
-                let con=document.getElementById("cno").value;
-                let mass =document.getElementById("massage").value
-                
-            Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "tiwarikanhaiya149@gmail.com",
-    Password : "8D55B3CDD3D2782B981843621F67CE1DE976",
-    To : 'kanhaiyatiwaritiwari490@gmail.com',
-    From : "tiwarikanhaiya149@gmail.com",
-    Subject : "Mail:-from contact form",
-    Body : "Name:-"+name+"<br/> Email:-"+email+"<br/>+contact:-"+con+"<br/>massage:-"+mass
-}).then(
-  message => alert(message)
-);
-}
-        </script>
-
-
-
-
-  
-
-
-<section id="contact-section">
-    <div id="contact">
-        <div class="contact-part-1">
-            <div class="contact-text-1">Contact Me</div>
-            <div class="contact-text-2">Get in Touch</div>
-        </div>
-        <div class="contact-part-2">
-            <div class="contact-part-2-A">
-                <div>
-                    <i class="uil uil-phone"></i>
-                    <div class="contact-line"><span class="call-me-A">Mobile</span><br> 8305813927</div>
-                </div>
-                <div>
-                    <i class="uil uil-envelope-alt"></i>
-                    <div class="email-line"><span class="email-A">Email</span><br> Kanhaiyatiwaritiwari490@gmail.com
+    <!-- Contact -->
+    <section id="contact-section">
+        <div id="contact">
+            <div class="contact-part-1">
+                <div class="contact-text-1">Contact Me</div>
+                <div class="contact-text-2">Get in Touch</div>
+            </div>
+            <div class="contact-part-2">
+                <div class="contact-part-2-A">
+                    <div>
+                        <i class="uil uil-phone"></i>
+                        <div class="contact-line"><span class="call-me-A">Mobile</span><br> <a href="tel:+917725880714">+91 7725880714</a></div>
+                    </div>
+                    <div>
+                        <i class="uil uil-envelope-alt"></i>
+                        <div class="email-line"><span class="email-A">Email</span><br> <a href="mailto:kanhaiyatiwaritiwari490@gmail.com">kanhaiyatiwaritiwari490@gmail.com</a></div>
+                    </div>
+                    <div>
+                        <i class="uil uil-map-marker"></i>
+                        <div class="location-line"><span class="location-A">Location</span><br> Sagar, Madhya Pradesh</div>
                     </div>
                 </div>
-                <div>
-                    <i class="uil uil-map-marker"></i>
-                    <div class="location-line"><span class="location-A">Location</span><br> Sagar (M.P)
-                       </div>
-                </div>
+                <form class="contact-part-2-B" id="contact-form">
+                    <input type="text" class="name" placeholder="Name" id="name" required>
+                    <input type="email" class="email" placeholder="Email" id="email" required>
+                    <input type="tel" class="phone" placeholder="Contact No." id="cno">
+                    <input type="text" class="message" placeholder="Message" id="massage" required>
+                </form>
             </div>
-            <div class="contact-part-2-B">
-                <input type="text" class="name" placeholder="Name"  id="name">
-                <input type="email" class="email" placeholder="Email" id="email">
-                <input type="number" class="phone" placeholder="Contact No." id="cno">
-                <input type="text" class="message" placeholder="Message" id="massage">
+            <button type="submit" form="contact-form" id="submit" class="send-message-btn">Send Message &nbsp;<i class="uil uil-message"></i></button>
+            <div class="contact-part-3">
+                <a href="https://github.com/kanhaiyatiwari" target="_blank" rel="noopener" class="contact-github-icon" aria-label="GitHub"><i class="uil uil-github"></i></a>
+                <a href="https://www.linkedin.com/in/kanhaiya-tiwari-684942257/" target="_blank" rel="noopener" class="contact-linkedin-icon" aria-label="LinkedIn"><i class="uil uil-linkedin"></i></a>
+                <a href="https://twitter.com/kanhaiy64618991" target="_blank" rel="noopener" class="contact-twitter-icon" aria-label="Twitter"><i class="uil uil-twitter"></i></a>
             </div>
         </div>
-        <span onclick="sendEmail();reset();return false;"  id="submit" class="send-message-btn">Send Message &nbsp;<i class="uil uil-message"></i></span>
-        <div class="contact-part-3">
-            <a href="https://github.com/kanhaiyatiwari" target="_blank" class="contact-github-icon">
-                <i class="uil uil-github"></i>
-            </a>
+    </section>
 
-            <a href="https://www.linkedin.com/in/kanhaiya-tiwari-684942257/" target="_blank"
-                class="contact-linkedin-icon">
-                <i class="uil uil-linkedin"></i>
-            </a>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
+    <script src="dist/script.js"></script>
+    <script>
+        // Resume links: the download attribute saves the local PDF, and this opens the Drive copy in a new tab
+        var RESUME_DRIVE_URL = "https://drive.google.com/file/d/1qB8o7YArDs00iRC84G1pNngP2XM1IBOi/view?usp=sharing";
+        function openResume() {
+            window.open(RESUME_DRIVE_URL, "_blank", "noopener");
+        }
 
-            <a href="https://twitter.com/kanhaiy64618991" target="_blank" class="contact-twitter-icon">
-                <i class="uil uil-twitter"></i>
-            </a>
-        </div>
-    </div>
-</section>
-<!-- p -->
- 
+        // The form opens the visitor's mail app with the message filled in
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("cno").value;
+            var msg = document.getElementById("massage").value;
+            var body = "Name: " + name + "\nEmail: " + email + "\nContact: " + phone + "\n\n" + msg;
+            window.location.href = "mailto:kanhaiyatiwaritiwari490@gmail.com"
+                + "?subject=" + encodeURIComponent("Portfolio contact from " + name)
+                + "&body=" + encodeURIComponent(body);
+            this.reset();
+        });
+    </script>
+    <script src="https://unpkg.com/github-calendar@2.3.4/dist/github-calendar.min.js"></script>
+    <script>
+        GitHubCalendar(".calendar", "kanhaiyatiwari", { responsive: true });
+    </script>
 </body>
 
 </html>
-<Script>
-    function openResume(){
-        myv();
-        window.open("https://drive.google.com/file/d/1ZXSp4cUOHl-7O6BfGvQSrCg-TLsNCFXr/view?usp=sharing");
-       
-       
-    }
-</Script>
-<script src="js/script.js"></script>
-
-<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script><script  src="dist/script.js"></script>
-
-
-
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <script>
-      GitHubCalendar(".calendar", "kanhaiyatiwari");
-      // or enable responsive functionality
-      GitHubCalendar(".calendar", "kanhaiyatiwari", { responsive: true });
-    </script>
-
-
-<script >
-    console.log(window.innerWidth);
-</script>
-
-
-
-
-
-
-

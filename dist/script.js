@@ -39,9 +39,11 @@ $(".navbar-toggler").click(function(){
 	setTimeout(function(){ test(); });
 });
 
+// Close the menu after a click, but only in the mobile (collapsed) layout
 function myv(){
-	document.getElementById("navbarSupportedContent").style.display="none"
-	
+	if ($(".navbar-toggler").is(":visible")) {
+		$(".navbar-collapse").slideUp(300);
+	}
 }
 
 // --------------add active class-on another-page move----------
